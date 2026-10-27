@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rosa Sobre Rodas — um jogo sobre mobilidade urbana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="960" height="600"></canvas>
+
+    <div id="title" class="overlay">
+      <div class="card">
+        <h1>Rosa Sobre Rodas</h1>
+        <p class="sub">Um jogo de plataforma sobre <strong>mobilidade urbana</strong>.</p>
+        <p>A Rosa usa cadeira de rodas — ela <strong>não pula</strong>. Para atravessar a
+        cidade ela depende de <strong>rampas, elevadores e calçadas acessíveis</strong>,
+        como milhões de pessoas todos os dias.</p>
+        <ul>
+          <li><kbd>←</kbd> <kbd>→</kbd> ou <kbd>A</kbd> <kbd>D</kbd> — rodar</li>
+          <li>Elevadores sobem e descem sozinhos — é só embarcar</li>
+          <li>Colete as <strong>estrelas</strong> e aprenda fatos sobre acessibilidade</li>
+          <li><kbd>R</kbd> — recomeçar</li>
+        </ul>
+        <button id="play">JOGAR</button>
+        <p class="hint">ou pressione <kbd>Enter</kbd></p>
+      </div>
+    </div>
+
+    <div id="win" class="overlay hidden">
+      <div class="card">
+        <h1>Você chegou!</h1>
+        <p id="winStars" class="sub"></p>
+        <p>Uma cidade acessível é possível — e é <strong>direito de todas as pessoas</strong>.
+        Rampas, elevadores, piso tátil e calçadas livres não são favor: são cidadania.</p>
+        <button id="again">JOGAR DE NOVO</button>
+        <p class="hint">ou pressione <kbd>R</kbd></p>
+      </div>
+    </div>
+
+    <div id="touch">
+      <button id="tleft" aria-label="esquerda">◀</button>
+      <button id="tright" aria-label="direita">▶</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
